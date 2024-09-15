@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --color-blue-active: #1257b8;
+    --color-blue: #6fa9fd;
+    --color-white: #c0d2d6;
+    --color-bg: #25282a;
+}
+body {
+    padding: 1rem;
+    min-height: 100vh;
+    background-color: var(--color-bg);
+}
+input {
+    display: none;
+}
+input:checked + .meme-slider__img {
+    background-color: red;
+}
+input:checked + * + * {
+    background-color: blue;
+}
+
+input + * + * + *  {
+    padding: 0.5rem;
+    display: block;
+}
+input + * + * + *::before {
+    content: "";
+    width: 0.4rem;
+    height: 0.4rem;
+    display: block;
+    border-radius: 50%;
+    border: 0.15rem solid var(--color-blue);
+    transition: all .2s linear;
+}
+
+
+input:active + * + * + *::before {
+    background-color: var(--color-blue-active) !important;
+}
+
+input:hover + * + * + *::before {
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+input:checked + * + * + *::before {
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
+
+}
