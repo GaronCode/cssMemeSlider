@@ -7,40 +7,55 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-        <fieldset>
-            <div>
-                <input
-                    type="radio"
-                    id="mem1"
-                    name="drone"
-                    value="mem1"
-                    checked
-                />
-                <div class="meme-slider__img">mem1 img</div>
-                <div class="meme-slider__label">mem1</div>
-                <label for="mem1">mem1</label>
-            </div>
+		<fieldset>
+			<input type="radio" id="mem1" name="mem" value="mem1" checked />
+			<div class="meme-slider">
+				<div class="meme-slider__img">mem1 img</div>
+				<div class="meme-slider__label">mem1</div>
+				<div class="meme-slider__btns">
+					<label class="active" for="mem1"></label>
+					<label class="" for="mem2"></label>
+					<label class="" for="mem3"></label>
+					<label class="" for="mem4"></label>
+				</div>
+			</div>
 
-            <div>
-                <input type="radio" id="mem2" name="drone" value="mem2" />
-                <div class="meme-slider__img">mem2 img</div>
-                <div class="meme-slider__label">mem2</div>
-                <label cla for="mem2">mem2</label>
-            </div>
+			<input type="radio" id="mem2" name="mem" value="mem2" />
+			<div class="meme-slider">
+				<div class="meme-slider__img">mem2 img</div>
+				<div class="meme-slider__label">mem2</div>
+				<div class="meme-slider__btns">
+					<label class="" for="mem1"></label>
+					<label class="active" for="mem2"></label>
+					<label class="" for="mem3"></label>
+					<label class="" for="mem4"></label>
+				</div>
+			</div>
 
-            <div>
-                <input type="radio" id="mem3" name="drone" value="mem3" />
-                <div class="meme-slider__img">mem3 img</div>
-                <div class="meme-slider__label">mem3</div>
-                <label for="mem3">mem3</label>
-            </div>
+			<input type="radio" id="mem3" name="mem" value="mem3" />
+			<div class="meme-slider">
+				<div class="meme-slider__img">mem3 img</div>
+				<div class="meme-slider__label">mem3</div>
+				<div class="meme-slider__btns">
+					<label class="" for="mem1"></label>
+					<label class="" for="mem2"></label>
+					<label class="active" for="mem3"></label>
+					<label class="" for="mem4"></label>
+				</div>
+			</div>
 
-            <div>
-                <input type="radio" id="mem4" name="drone" value="mem4" />
-                <div class="meme-slider__img">mem4 img</div>
-                <div class="meme-slider__label">mem4</div>
-                <label for="mem4">mem4</label>
-            </div>
-        </fieldset>
+			<input type="radio" id="mem4" name="mem" value="mem4" />
+			<div class="meme-slider">
+				<div class="meme-slider__img">mem4 img</div>
+				<div class="meme-slider__label">mem4</div>
+
+				<div class="meme-slider__btns">
+					<label class="" for="mem1"></label>
+					<label class="" for="mem2"></label>
+					<label class="" for="mem3"></label>
+					<label class="active" for="mem4"></label>
+				</div>
+			</div>
+		</fieldset>
 	</body>
 </html>
