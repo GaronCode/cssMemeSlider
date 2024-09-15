@@ -4,7 +4,7 @@
     margin: 0;
 }
 :root {
-    --color-blue-active: #1257b8;
+    --color-blue-active: #b7d6ff;
     --color-blue: #6fa9fd;
     --color-white: #c0d2d6;
     --color-bg: #25282a;
@@ -17,18 +17,30 @@ body {
 input {
     display: none;
 }
-input:checked + .meme-slider__img {
-    background-color: red;
-}
-input:checked + * + * {
-    background-color: blue;
-}
 
-input + * + * + *  {
-    padding: 0.5rem;
+input + * {
+    display: none;
+}
+input:checked + * {
     display: block;
 }
-input + * + * + *::before {
+
+
+
+
+
+
+
+
+
+
+label {
+    padding: 0.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+label::before {
     content: "";
     width: 0.4rem;
     height: 0.4rem;
@@ -38,18 +50,13 @@ input + * + * + *::before {
     transition: all .2s linear;
 }
 
-
-input:active + * + * + *::before {
-    background-color: var(--color-blue-active) !important;
+label.active::before {
+    background-color: var(--color-white) !important;
+    border-color: var(--color-white) !important;
 }
-
-input:hover + * + * + *::before {
-    background-color: var(--color-white);
-    border-color: var(--color-white);
+label:active::before {
+    border-color: var(--color-blue-active);
 }
-
-input:checked + * + * + *::before {
+label:hover::before {
     background-color: var(--color-blue);
-    border-color: var(--color-blue);
-
 }
